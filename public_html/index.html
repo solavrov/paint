@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Микропэйнт</title>
+        <style>
+            #box {
+                width: 100%;
+                text-align:center; 
+            }
+            table {
+                margin-left: auto;
+                margin-right: auto;
+                table-layout: auto;
+            }
+            #CANVAS {
+                border: 2px solid black;
+            }
+            #imgBox {
+                width: 400px;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <table>
+                <tr>
+                    <td>
+                        pick color:
+                    </td>
+                    <td style="background: black; border: 1px solid black">
+                        <input type="radio" name="colorPick" value="black" checked="checked">
+                    </td>
+                    <td style="background: red; border: 1px solid black">
+                        <input type="radio" name="colorPick" value="red">
+                    </td>
+                    <td style="background: green; border: 1px solid black">
+                        <input type="radio" name="colorPick" value="green">
+                    </td>
+                    <td style="background: blue; border: 1px solid black">
+                        <input type="radio" name="colorPick" value="blue">
+                    </td>
+                    <td style="background: white; border: 1px solid black">
+                        <input type="radio" name="colorPick" value="white">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        pick brush size:
+                    </td>
+                    <td style="border: 1px solid black">
+                        <input type="radio" name="sizePick" value="2" checked="checked">
+                        <label>2px</label>
+                    </td>
+                    <td style="border: 1px solid black">
+                        <input type="radio" name="sizePick" value="6">
+                        <label>6px</label>
+                    </td>
+                    <td style="border: 1px solid black">
+                        <input type="radio" name="sizePick" value="10">
+                        <label>10px</label>
+                    </td>
+                    <td style="border: 1px solid black">
+                        <input type="radio" name="sizePick" value="20">
+                        <label>20px</label>
+                    </td>
+                    <td style="border: 1px solid black">
+                        <input type="radio" name="sizePick" value="100">
+                        <label>100px</label>
+                    </td>
+                </tr>
+            </table>
+            <canvas id="CANVAS"></canvas>
+            <br>
+<!--            <button id="but1">Chebu</button>-->
+            <button id="but2">Save</button>
+            <br>
+            <div id="imgBox"></div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
+
+
+
